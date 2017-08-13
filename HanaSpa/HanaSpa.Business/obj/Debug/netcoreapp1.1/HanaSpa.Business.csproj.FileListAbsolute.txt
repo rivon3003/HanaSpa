@@ -1,0 +1,7 @@
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Business\bin\Debug\netcoreapp1.1\HanaSpa.Business.deps.json
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Business\bin\Debug\netcoreapp1.1\HanaSpa.Business.dll
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Business\bin\Debug\netcoreapp1.1\HanaSpa.Business.pdb
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Business\obj\Debug\netcoreapp1.1\HanaSpa.Business.csprojResolveAssemblyReference.cache
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Business\obj\Debug\netcoreapp1.1\HanaSpa.Business.AssemblyInfo.cs
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Business\obj\Debug\netcoreapp1.1\HanaSpa.Business.dll
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Business\obj\Debug\netcoreapp1.1\HanaSpa.Business.pdb

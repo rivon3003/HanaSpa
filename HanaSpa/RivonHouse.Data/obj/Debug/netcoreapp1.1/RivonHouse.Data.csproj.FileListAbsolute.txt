@@ -1,0 +1,7 @@
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\RivonHouse.Data\bin\Debug\netcoreapp1.1\RivonHouse.Data.deps.json
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\RivonHouse.Data\bin\Debug\netcoreapp1.1\RivonHouse.Data.dll
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\RivonHouse.Data\bin\Debug\netcoreapp1.1\RivonHouse.Data.pdb
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\RivonHouse.Data\obj\Debug\netcoreapp1.1\RivonHouse.Data.csprojResolveAssemblyReference.cache
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\RivonHouse.Data\obj\Debug\netcoreapp1.1\RivonHouse.Data.AssemblyInfo.cs
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\RivonHouse.Data\obj\Debug\netcoreapp1.1\RivonHouse.Data.dll
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\RivonHouse.Data\obj\Debug\netcoreapp1.1\RivonHouse.Data.pdb

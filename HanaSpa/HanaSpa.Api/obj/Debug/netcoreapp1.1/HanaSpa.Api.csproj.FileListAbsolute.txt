@@ -1,0 +1,11 @@
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\bin\Debug\netcoreapp1.1\HanaSpa.Api.deps.json
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\bin\Debug\netcoreapp1.1\HanaSpa.Api.runtimeconfig.json
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\bin\Debug\netcoreapp1.1\HanaSpa.Api.runtimeconfig.dev.json
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\bin\Debug\netcoreapp1.1\HanaSpa.Api.dll
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\obj\Debug\netcoreapp1.1\HanaSpa.Api.csprojResolveAssemblyReference.cache
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\obj\Debug\netcoreapp1.1\HanaSpa.Api.AssemblyInfo.cs
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\bin\Debug\netcoreapp1.1\HanaSpa.Api.pdb
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\obj\Debug\netcoreapp1.1\HanaSpa.Api.dll
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\obj\Debug\netcoreapp1.1\HanaSpa.Api.pdb
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\bin\Debug\netcoreapp1.1\HanaSpa.Business.dll
+C:\Users\RivonNguyen\documents\visual studio 2017\Projects\HanaSpa\HanaSpa.Api\bin\Debug\netcoreapp1.1\HanaSpa.Business.pdb
