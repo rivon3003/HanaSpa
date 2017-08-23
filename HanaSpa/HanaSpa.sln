@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanaSpa.Api", "HanaSpa.Api\HanaSpa.Api.csproj", "{C3660C93-1668-4102-A5DC-4497FD785D7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Api", "HanaSpa.Api\HanaSpa.Api.csproj", "{C3660C93-1668-4102-A5DC-4497FD785D7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanaSpa.Business", "HanaSpa.Business\HanaSpa.Business.csproj", "{FA12EA7D-3B0D-4CBB-96D6-803061FA4026}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Business", "HanaSpa.Business\HanaSpa.Business.csproj", "{FA12EA7D-3B0D-4CBB-96D6-803061FA4026}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RivonHouse.Data", "RivonHouse.Data\RivonHouse.Data.csproj", "{61BA9730-954A-4F88-A685-797B4F4CC80A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RivonHouse.Data", "RivonHouse.Data\RivonHouse.Data.csproj", "{61BA9730-954A-4F88-A685-797B4F4CC80A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Dto", "HanaSpa.Dto\HanaSpa.Dto.csproj", "{085FED56-2BB7-48AD-ACB5-5AE56DD56229}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Entity", "HanaSpa.Entity\HanaSpa.Entity.csproj", "{29FAF378-1C3D-4D7E-BADF-663DCD8075DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RivonHouse.Common", "RivonHouse.Common\RivonHouse.Common.csproj", "{D2F65C1D-BDEF-41F0-BA9B-1B413B86FAE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Infrastructure", "HanaSpa.Infrastructure\HanaSpa.Infrastructure.csproj", "{6D1ADF0F-3050-4BE8-8153-6788AD5FCBD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RivonHouse.Infrastructure", "RivonHouse.Infrastructure\RivonHouse.Infrastructure.csproj", "{CDC8BB95-3BEF-4E5C-B70D-2C062D3ED027}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +37,26 @@ Global
 		{61BA9730-954A-4F88-A685-797B4F4CC80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61BA9730-954A-4F88-A685-797B4F4CC80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61BA9730-954A-4F88-A685-797B4F4CC80A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{085FED56-2BB7-48AD-ACB5-5AE56DD56229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{085FED56-2BB7-48AD-ACB5-5AE56DD56229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{085FED56-2BB7-48AD-ACB5-5AE56DD56229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{085FED56-2BB7-48AD-ACB5-5AE56DD56229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FAF378-1C3D-4D7E-BADF-663DCD8075DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FAF378-1C3D-4D7E-BADF-663DCD8075DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FAF378-1C3D-4D7E-BADF-663DCD8075DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FAF378-1C3D-4D7E-BADF-663DCD8075DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F65C1D-BDEF-41F0-BA9B-1B413B86FAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F65C1D-BDEF-41F0-BA9B-1B413B86FAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F65C1D-BDEF-41F0-BA9B-1B413B86FAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F65C1D-BDEF-41F0-BA9B-1B413B86FAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1ADF0F-3050-4BE8-8153-6788AD5FCBD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1ADF0F-3050-4BE8-8153-6788AD5FCBD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1ADF0F-3050-4BE8-8153-6788AD5FCBD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1ADF0F-3050-4BE8-8153-6788AD5FCBD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC8BB95-3BEF-4E5C-B70D-2C062D3ED027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC8BB95-3BEF-4E5C-B70D-2C062D3ED027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC8BB95-3BEF-4E5C-B70D-2C062D3ED027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC8BB95-3BEF-4E5C-B70D-2C062D3ED027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

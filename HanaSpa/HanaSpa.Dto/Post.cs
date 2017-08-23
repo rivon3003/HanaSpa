@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using RivonHouse.Common.Data.Dto;
 
 namespace HanaSpa.Dto
 {
-    public class Post
+    public class Post : DtoBase
     {
+
     }
 }

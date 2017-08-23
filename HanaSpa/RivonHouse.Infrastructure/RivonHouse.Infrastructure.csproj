@@ -4,8 +4,4 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\RivonHouse.Common\RivonHouse.Common.csproj" />
-  </ItemGroup>
-
 </Project>

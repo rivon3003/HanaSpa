@@ -7,5 +7,6 @@ namespace HanaSpa.Infrastructure.Business
     public interface IPost
     {
         List<Dto.Post> GetAll();
+        void Save();
     }
 }

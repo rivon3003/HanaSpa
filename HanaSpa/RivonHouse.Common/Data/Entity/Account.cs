@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RivonHouse.Common.Data
+namespace RivonHouse.Common.Data.Entity
 {
-    class DtoBase
+    public class Account
     {
-        public int Id { get; set; }
     }
 }
