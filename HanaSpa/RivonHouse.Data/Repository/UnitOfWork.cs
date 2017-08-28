@@ -13,14 +13,13 @@ using System.Linq;
 using RivonHouse.Common.Data.ViewModel.Account;
 using RivonHouse.Common.Extensions;
 using RivonHouse.Common.Data.Result;
-using RivonHouse.Common.Constants;
 
 
 namespace RivonHouse.Data.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly DbContext dbContext;
+        private readonly DbContext _dbContext;
         private readonly Dictionary<Type, IGenericRepository> cachedRepositories = new Dictionary<Type, IGenericRepository>();
         private bool diposed = false;
 
@@ -28,7 +27,7 @@ namespace RivonHouse.Data.Repository
 
         public UnitOfWork(DbContext dbContext, IHttpContextAccessor httpContextAccessor)
         {
-            this.dbContext = dbContext;
+            _dbContext = dbContext;
             _session = httpContextAccessor.HttpContext.Session;
         }
 
@@ -41,7 +40,7 @@ namespace RivonHouse.Data.Repository
             }
             else
             {
-                var repository = new GenericRepository<TEntity>(dbContext.Set<TEntity>());
+                var repository = new GenericRepository<TEntity>(_dbContext.Set<TEntity>());
                 cachedRepositories[type] = repository;
                 return repository;
             }
@@ -50,7 +49,7 @@ namespace RivonHouse.Data.Repository
         public void Save()
         {
             TrackDataRecords();
-            dbContext.SaveChanges();
+            _dbContext.SaveChanges();
         }
 
         public async Task<Save> SaveAsync()
@@ -58,7 +57,7 @@ namespace RivonHouse.Data.Repository
             TrackDataRecords();
             try
             {
-                await dbContext.SaveChangesAsync();
+                await _dbContext.SaveChangesAsync();
                 return new Save
                 {
                     IsSuccessful = true,
@@ -89,7 +88,7 @@ namespace RivonHouse.Data.Repository
             {
                 if (disposing)
                 {
-                    dbContext.Dispose();
+                    _dbContext.Dispose();
                 }
             }
             this.diposed = true;
@@ -103,12 +102,12 @@ namespace RivonHouse.Data.Repository
 
         public DbContext GetContext()
         {
-            return dbContext;
+            return _dbContext;
         }
 
         private void TrackDataRecords()
         {
-            var changeSet = dbContext.ChangeTracker.Entries();
+            var changeSet = _dbContext.ChangeTracker.Entries();
 
             if (changeSet != null)
             {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RivonHouse.Common.Data.Dto
 {
-    public class DtoBase
+    public class Base
     {
         public int Id { get; set; }
     }
