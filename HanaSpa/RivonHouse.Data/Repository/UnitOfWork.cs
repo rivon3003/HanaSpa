@@ -19,7 +19,7 @@ namespace RivonHouse.Data.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly DbContext _dbContext;
+        protected readonly DbContext _dbContext;
         private readonly Dictionary<Type, IGenericRepository> cachedRepositories = new Dictionary<Type, IGenericRepository>();
         private bool diposed = false;
 
@@ -69,7 +69,7 @@ namespace RivonHouse.Data.Repository
                 return new Save
                 {
                     IsSuccessful = false,
-                    Message = Messages.ConcurrencyOccured
+                    Message = Messages.ConcurrencyOccured + "-" + ex.Message
                 };
             }
             catch

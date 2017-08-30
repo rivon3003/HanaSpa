@@ -25,6 +25,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HanaSpa.Business\HanaSpa.Business.csproj" />
+    <ProjectReference Include="..\HanaSpa.Data\HanaSpa.Data.csproj" />
     <ProjectReference Include="..\HanaSpa.Infrastructure\HanaSpa.Infrastructure.csproj" />
   </ItemGroup>
 

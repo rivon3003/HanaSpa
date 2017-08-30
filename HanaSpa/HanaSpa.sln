@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Infrastructure", "H
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RivonHouse.Infrastructure", "RivonHouse.Infrastructure\RivonHouse.Infrastructure.csproj", "{CDC8BB95-3BEF-4E5C-B70D-2C062D3ED027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanaSpa.Data", "HanaSpa.Data\HanaSpa.Data.csproj", "{27F0FDF7-E55E-4BAA-9CFF-7BB212638999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Data", "HanaSpa.Data\HanaSpa.Data.csproj", "{27F0FDF7-E55E-4BAA-9CFF-7BB212638999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanaSpa.Common", "HanaSpa.Common\HanaSpa.Common.csproj", "{BC04774B-487B-436B-89EA-CDF23E955669}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{27F0FDF7-E55E-4BAA-9CFF-7BB212638999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F0FDF7-E55E-4BAA-9CFF-7BB212638999}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27F0FDF7-E55E-4BAA-9CFF-7BB212638999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC04774B-487B-436B-89EA-CDF23E955669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC04774B-487B-436B-89EA-CDF23E955669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC04774B-487B-436B-89EA-CDF23E955669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC04774B-487B-436B-89EA-CDF23E955669}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

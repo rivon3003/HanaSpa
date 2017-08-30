@@ -5,9 +5,9 @@ using EfCore = Microsoft.EntityFrameworkCore;
 
 namespace HanaSpa.Data.DbContext
 {
-    public class SpaHanaContext : EfCore.DbContext
+    public class HanaSpaContext : EfCore.DbContext
     {
-        public SpaHanaContext(EfCore.DbContextOptions<SpaHanaContext> options) : base(options)
+        public HanaSpaContext(EfCore.DbContextOptions<HanaSpaContext> options) : base(options)
         {
         }
 

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HanaSpa.Dto\HanaSpa.Dto.csproj" />
+    <ProjectReference Include="..\RivonHouse.Infrastructure\RivonHouse.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

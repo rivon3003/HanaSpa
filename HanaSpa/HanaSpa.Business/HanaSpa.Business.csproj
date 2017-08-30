@@ -5,8 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HanaSpa.Data\HanaSpa.Data.csproj" />
     <ProjectReference Include="..\HanaSpa.Dto\HanaSpa.Dto.csproj" />
     <ProjectReference Include="..\HanaSpa.Infrastructure\HanaSpa.Infrastructure.csproj" />
+    <ProjectReference Include="..\RivonHouse.Data\RivonHouse.Data.csproj" />
   </ItemGroup>
 
 </Project>

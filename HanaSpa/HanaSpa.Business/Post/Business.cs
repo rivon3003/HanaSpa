@@ -2,11 +2,24 @@
 using System.Collections.Generic;
 using System.Text;
 using HanaSpa.Infrastructure.Business;
+using RivonHouse.Infrastructure.Repository;
+using HanaSpa.Data.Entities;
 
 namespace HanaSpa.Business.Post
 {
     public class Business : IPost
     {
+        #region Contructor and Properties
+
+        private readonly IUnitOfWorkFactory<IUnitOfWork> _uowFac;
+
+        public Business(IUnitOfWorkFactory<IUnitOfWork> uowFac)
+        {
+            _uowFac = uowFac;
+        }
+
+        #endregion Contructor and Properties
+
         public List<Dto.Post> GetAll()
         {
             var result = new List<Dto.Post>
@@ -18,9 +31,13 @@ namespace HanaSpa.Business.Post
             return result;
         }
 
-        public void Save()
+        public void Create()
         {
-            
+            using (var uow = _uowFac.Create())
+            {
+                uow.Repository<Service>().Insert(new Service());
+                uow.Save();
+            }
         }
     }
 }

@@ -28,7 +28,7 @@ namespace HanaSpa.Api.Controllers
         [HttpPost]
         public void Post()
         {
-            _postBusiness.Save();
+            _postBusiness.Create();
         }
     }
 }

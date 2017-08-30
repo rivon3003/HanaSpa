@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using IBusiness = HanaSpa.Infrastructure.Business;
 using PostBussines = HanaSpa.Business.Post.Business;
+using HanaSpa.Data.DbContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace HanaSpa.Api
 {
@@ -34,6 +36,9 @@ namespace HanaSpa.Api
 
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();
+
+            //Add DBContext
+            services.AddDbContext<HanaSpaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddSession(options =>
             {
