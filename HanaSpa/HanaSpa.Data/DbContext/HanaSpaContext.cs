@@ -14,7 +14,7 @@ namespace HanaSpa.Data.DbContext
         protected override void OnModelCreating(EfCore.ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            new Map.Service(modelBuilder.Entity<Entities.Service>());
+            new Map.EntityWithDb.Service(modelBuilder.Entity<Entities.Service>());
         }
     }
 }

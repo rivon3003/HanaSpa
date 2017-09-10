@@ -1,16 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using AutoMapper;
+using HanaSpa.Business;
+using HanaSpa.Data.DbContext;
+using HanaSpa.Data.Repository;
+using HanaSpa.Infrastructure.Business;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using IBusiness = HanaSpa.Infrastructure.Business;
-using PostBussines = HanaSpa.Business.Post.Business;
-using HanaSpa.Data.DbContext;
-using Microsoft.EntityFrameworkCore;
+using RivonHouse.Data.Repository;
+using RivonHouse.Infrastructure.Repository;
 
 namespace HanaSpa.Api
 {
@@ -33,22 +34,19 @@ namespace HanaSpa.Api
         {
             // Add framework services.
             services.AddMvc();
+            services.AddSession();
+
+            services.AddAutoMapper();
+            //Add DBContext
+            services.AddDbContext<HanaSpaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();
 
-            //Add DBContext
-            services.AddDbContext<HanaSpaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddSession(options =>
-            {
-                // Set a short timeout for easy testing.
-                options.IdleTimeout = TimeSpan.FromSeconds(10);
-                options.CookieHttpOnly = true;
-            });
-
             // Register application business
-            services.AddScoped<IBusiness.IPost, PostBussines>();
+            services.AddTransient<IService, Service>();
+            services.AddTransient<IUnitOfWorkFactory<IUnitOfWork>, UnitOfWorkFactory<UnitOfWork,HanaSpaContext>>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,8 +55,9 @@ namespace HanaSpa.Api
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseMvc();
+            // Session must use before MVC
             app.UseSession();
+            app.UseMvc();
         }
     }
 }

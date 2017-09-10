@@ -1,10 +1,6 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using HanaSpa.Infrastructure.Business;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HanaSpa.Api.Controllers
 {
@@ -12,23 +8,23 @@ namespace HanaSpa.Api.Controllers
     [Route("api/Post")]
     public class PostController : Controller
     {
-        private readonly IPost _postBusiness;
+        private readonly IPost _postBus;
 
-        public PostController(IPost postBusiness)
+        public PostController(IPost postBus)
         {
-            _postBusiness = postBusiness;
+            _postBus = postBus;
         }
 
         [HttpGet]
         public IEnumerable<Dto.Post> Get()
         {
-            return _postBusiness.GetAll();
+            return _postBus.GetAll();
         }
 
         [HttpPost]
-        public void Post()
+        public void Post(Dto.Post post)
         {
-            _postBusiness.Create();
+            _postBus.Create(post);
         }
     }
 }

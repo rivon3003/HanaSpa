@@ -9,6 +9,8 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.0.1" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
@@ -27,6 +29,7 @@
     <ProjectReference Include="..\HanaSpa.Business\HanaSpa.Business.csproj" />
     <ProjectReference Include="..\HanaSpa.Data\HanaSpa.Data.csproj" />
     <ProjectReference Include="..\HanaSpa.Infrastructure\HanaSpa.Infrastructure.csproj" />
+    <ProjectReference Include="..\HanaSpa.ViewModel\HanaSpa.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>

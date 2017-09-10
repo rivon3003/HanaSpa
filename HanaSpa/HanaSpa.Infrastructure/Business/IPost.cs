@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RivonHouse.Infrastructure.Business;
+﻿using System.Collections.Generic;
+
+using hsDto = HanaSpa.Dto;
 
 namespace HanaSpa.Infrastructure.Business
 {
-    public interface IPost : IBase<Dto.Post>
+    public interface IPost
     {
+        IEnumerable<hsDto.Post> GetAll();
+        void Create(hsDto.Post post);
     }
 }

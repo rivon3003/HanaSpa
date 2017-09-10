@@ -1,27 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
 using HanaSpa.Infrastructure.Business;
-
+using Microsoft.AspNetCore.Mvc;
+using RivonHouse.Common.Data.Result;
+using HanaSpa.ViewModel;
+using HanaSpa.Common.Helper;
 namespace HanaSpa.Api.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Service")]
+    [Route("api/[controller]")]
     public class ServiceController : Controller
     {
-        private IService _service;
+        private IService _serviceBus;
 
-        public ServiceController(IService service)
+        public ServiceController(IService serviceBus)
         {
-            _service = service;
+            _serviceBus = serviceBus;
         }
 
+        [HttpGet]
         public IEnumerable<Dto.Service> Get()
         {
-            return _service.Get();
+            return _serviceBus.GetAll();
+        }
+
+        [HttpPost]
+        public Save Create([FromBody] Dto.Service service)
+        {
+            _serviceBus.Create(service);
+            return new Save();
         }
     }
 }

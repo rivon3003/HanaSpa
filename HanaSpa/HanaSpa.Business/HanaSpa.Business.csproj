@@ -8,7 +8,17 @@
     <ProjectReference Include="..\HanaSpa.Data\HanaSpa.Data.csproj" />
     <ProjectReference Include="..\HanaSpa.Dto\HanaSpa.Dto.csproj" />
     <ProjectReference Include="..\HanaSpa.Infrastructure\HanaSpa.Infrastructure.csproj" />
+    <ProjectReference Include="..\HanaSpa.Map\HanaSpa.Map.csproj" />
+    <ProjectReference Include="..\RivonHouse.Business\RivonHouse.Business.csproj" />
     <ProjectReference Include="..\RivonHouse.Data\RivonHouse.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
   </ItemGroup>
 
 </Project>

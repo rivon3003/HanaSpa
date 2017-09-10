@@ -13,8 +13,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HanaSpa.Common\HanaSpa.Common.csproj" />
-    <ProjectReference Include="..\RivonHouse.Common\RivonHouse.Common.csproj" />
+    <ProjectReference Include="..\HanaSpa.Infrastructure\HanaSpa.Infrastructure.csproj" />
     <ProjectReference Include="..\RivonHouse.Data\RivonHouse.Data.csproj" />
+    <ProjectReference Include="..\RivonHouse.Infrastructure\RivonHouse.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

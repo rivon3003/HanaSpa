@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Entity = HanaSpa.Data.Entities;
 
-namespace HanaSpa.Data.Map
+namespace HanaSpa.Data.Map.EntityWithDb
 {
     public class Service
     {

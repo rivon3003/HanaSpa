@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace HanaSpa.Infrastructure.Business
 {
     public interface IService
     {
-        List<Dto.Service> Get();
+        IEnumerable<Dto.Service> GetAll();
+        void Create(Dto.Service post);
     }
 }

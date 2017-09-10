@@ -11,9 +11,10 @@ using System;
 namespace HanaSpa.Data.Migrations
 {
     [DbContext(typeof(HanaSpaContext))]
-    partial class HanaSpaContextModelSnapshot : ModelSnapshot
+    [Migration("20170910105229_Update_ServiceTable_ColumnType")]
+    partial class Update_ServiceTable_ColumnType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

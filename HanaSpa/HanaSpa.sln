@@ -19,7 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RivonHouse.Infrastructure",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Data", "HanaSpa.Data\HanaSpa.Data.csproj", "{27F0FDF7-E55E-4BAA-9CFF-7BB212638999}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanaSpa.Common", "HanaSpa.Common\HanaSpa.Common.csproj", "{BC04774B-487B-436B-89EA-CDF23E955669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Common", "HanaSpa.Common\HanaSpa.Common.csproj", "{BC04774B-487B-436B-89EA-CDF23E955669}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RivonHouse.Business", "RivonHouse.Business\RivonHouse.Business.csproj", "{C6859AA7-3A77-43B6-BDA2-DE9B0ED4B312}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.ViewModel", "HanaSpa.ViewModel\HanaSpa.ViewModel.csproj", "{935BA517-BE70-403A-9505-FC3182B2C183}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HanaSpa.Map", "HanaSpa.Map\HanaSpa.Map.csproj", "{19640243-E848-4758-8E33-53B3AAA98B26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanaSpa.Web", "HanaSpa.Web\HanaSpa.Web.csproj", "{BA6AB290-6263-4E16-86C8-84DB6AD1D2D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +71,22 @@ Global
 		{BC04774B-487B-436B-89EA-CDF23E955669}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC04774B-487B-436B-89EA-CDF23E955669}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC04774B-487B-436B-89EA-CDF23E955669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6859AA7-3A77-43B6-BDA2-DE9B0ED4B312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6859AA7-3A77-43B6-BDA2-DE9B0ED4B312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6859AA7-3A77-43B6-BDA2-DE9B0ED4B312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6859AA7-3A77-43B6-BDA2-DE9B0ED4B312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{935BA517-BE70-403A-9505-FC3182B2C183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935BA517-BE70-403A-9505-FC3182B2C183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935BA517-BE70-403A-9505-FC3182B2C183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935BA517-BE70-403A-9505-FC3182B2C183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19640243-E848-4758-8E33-53B3AAA98B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19640243-E848-4758-8E33-53B3AAA98B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19640243-E848-4758-8E33-53B3AAA98B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19640243-E848-4758-8E33-53B3AAA98B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6AB290-6263-4E16-86C8-84DB6AD1D2D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6AB290-6263-4E16-86C8-84DB6AD1D2D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6AB290-6263-4E16-86C8-84DB6AD1D2D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6AB290-6263-4E16-86C8-84DB6AD1D2D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
