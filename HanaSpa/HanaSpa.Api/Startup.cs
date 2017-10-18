@@ -31,13 +31,8 @@ namespace HanaSpa.Api
         public void ConfigureServices(IServiceCollection services)
         {
             // For cross server communication	
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowSpecificOrigin",
-                    builder => builder.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader());
-            });
+            services.AddCors();
 
-            // Add framework services.
             services.AddMvc();
             services.AddSession();
 
@@ -50,6 +45,7 @@ namespace HanaSpa.Api
 
             // Register application business
             services.AddTransient<IService, Service>();
+            services.AddTransient<IUser, User>();
             services.AddTransient<IUnitOfWorkFactory<IUnitOfWork>, UnitOfWorkFactory<UnitOfWork,HanaSpaContext>>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
@@ -60,8 +56,12 @@ namespace HanaSpa.Api
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+
             // Shows UseCors with named policy.
-            app.UseCors("AllowSpecificOrigin");
+            app.UseCors(builder => builder
+                        .WithOrigins("http://localhost:3000")
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
 
             // Session must use before MVC
             app.UseSession();

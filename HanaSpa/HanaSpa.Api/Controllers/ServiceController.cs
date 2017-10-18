@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using HanaSpa.Infrastructure.Business;
+﻿using HanaSpa.Infrastructure.Business;
 using Microsoft.AspNetCore.Mvc;
 using RivonHouse.Common.Data.Result;
-using HanaSpa.ViewModel;
-using HanaSpa.Common.Helper;
+using System.Collections.Generic;
+
 namespace HanaSpa.Api.Controllers
 {
     [Produces("application/json")]
