@@ -11,9 +11,10 @@ using System;
 namespace HanaSpa.Data.Migrations
 {
     [DbContext(typeof(HanaSpaContext))]
-    partial class HanaSpaContextModelSnapshot : ModelSnapshot
+    [Migration("20171018063754_AddAccountTable")]
+    partial class AddAccountTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

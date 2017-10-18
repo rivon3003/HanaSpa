@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using HanaSpa.Business;
 using HanaSpa.Data.DbContext;
 using HanaSpa.Data.Repository;
@@ -10,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using RivonHouse.Data.Repository;
 using RivonHouse.Infrastructure.Repository;
 
 namespace HanaSpa.Api
@@ -32,6 +30,13 @@ namespace HanaSpa.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // For cross server communication	
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader());
+            });
+
             // Add framework services.
             services.AddMvc();
             services.AddSession();
@@ -54,6 +59,9 @@ namespace HanaSpa.Api
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            // Shows UseCors with named policy.
+            app.UseCors("AllowSpecificOrigin");
 
             // Session must use before MVC
             app.UseSession();

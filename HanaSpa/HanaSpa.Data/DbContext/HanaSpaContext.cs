@@ -15,6 +15,7 @@ namespace HanaSpa.Data.DbContext
         {
             base.OnModelCreating(modelBuilder);
             new Map.EntityWithDb.Service(modelBuilder.Entity<Entities.Service>());
+            new Map.EntityWithDb.Account(modelBuilder.Entity<Entities.Account>());
         }
     }
 }
