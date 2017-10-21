@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RivonHouse.Common\RivonHouse.Common.csproj" />
+    <ProjectReference Include="..\..\..\RivonHouse\RivonHouse.Common\RivonHouse.Common.csproj" />
   </ItemGroup>
 
 </Project>

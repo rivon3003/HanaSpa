@@ -12,10 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\RivonHouse\RivonHouse.Data\RivonHouse.Data.csproj" />
+    <ProjectReference Include="..\..\..\RivonHouse\RivonHouse.Infrastructure\RivonHouse.Infrastructure.csproj" />
     <ProjectReference Include="..\HanaSpa.Common\HanaSpa.Common.csproj" />
     <ProjectReference Include="..\HanaSpa.Infrastructure\HanaSpa.Infrastructure.csproj" />
-    <ProjectReference Include="..\RivonHouse.Data\RivonHouse.Data.csproj" />
-    <ProjectReference Include="..\RivonHouse.Infrastructure\RivonHouse.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
