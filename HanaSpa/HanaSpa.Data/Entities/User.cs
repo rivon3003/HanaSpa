@@ -2,7 +2,7 @@
 
 namespace HanaSpa.Data.Entities
 {
-    public class Account : Base
+    public class User : Base
     {
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
